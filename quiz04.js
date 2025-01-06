@@ -1,5 +1,35 @@
 function calculate(firstNum, operator, secondNum) {
 
+    //switch
+    // switch (operator) {
+    //     case '+':
+    //         return firstNum + secondNum;
+    //         break;
+    //     case '-':
+    //         return firstNum - secondNum;
+    //         break;
+    //     case '*':
+    //         return firstNum * secondNum;
+    //         break;
+    //     case '/':
+    //         return firstNum / secondNum;
+    //         break;
+    //     default:
+    //         return "error"
+    // }
+
+    //if-else-if
+    // if (operator === '+') {
+    //     return (firstNum + secondNum);
+    // } else if (operator === '-') {
+    //     return (firstNum - secondNum);
+    // } else if (operator === '*') {
+    //     return (firstNum * secondNum);
+    // } else if (operator === '/') {
+    //     return (firstNum / secondNum);
+    // }
+
+    //if
     if (operator === '+') {
         return (firstNum + secondNum);
     }
