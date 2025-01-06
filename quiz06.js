@@ -16,6 +16,12 @@ const coupon = { discount: 5000 };
 
 applyCoupon(userBCart, coupon);
 
+
+//순서도
+//1. userBCart객체를 만든다.
+//2. userBCart객체에 있는 프로퍼티들을 복사해온다.
+
+
 //아래 코드는 두 명의 유저(유저 A, 유저 B)가 각각 장바구니를 가지고 있다고 가정한 예시입니다.
 
 //B 유저에게 할인 쿠폰을 적용하려고 applyCoupon 함수를 만들었습니다.
