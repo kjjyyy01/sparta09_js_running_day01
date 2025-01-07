@@ -14,6 +14,8 @@
 //순서도
 //1. userBCart객체를 만든다.
 //2. userBCart객체에 있는 프로퍼티들을 복사해온다.
+//3. userBCart에 coupon을 적용 시킨다.
+// => userACart와 userBCart는 서로 다른 객체가 된다.(= 주소값이 달라진다.)
 
 function applyCoupon(cart, coupon) {
     cart.items.forEach((item) => {
@@ -28,19 +30,16 @@ const userACart = {
     ],
 };
 
-// const userBCart = {
-//     items: userACart.items.map((item) => ({ ...item })),
-// }
+const userBCart = {
+    items: userACart.items.map((item) => ({ ...item })),
+}
 
-const userBCart = structuredClone(userACart);
+
+// const userBCart = structuredClone(userACart);
 
 const coupon = { discount: 5000 };
 
 applyCoupon(userBCart, coupon);
 
-
-
-
-
-
-
+console.log(userACart);
+console.log(userBCart);
