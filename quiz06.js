@@ -28,7 +28,12 @@ const userACart = {
     ],
 };
 
-const userBCart = userACart;
+// const userBCart = {
+//     items: userACart.items.map((item) => ({ ...item })),
+// }
+
+const userBCart = structuredClone(userACart);
+
 const coupon = { discount: 5000 };
 
 applyCoupon(userBCart, coupon);

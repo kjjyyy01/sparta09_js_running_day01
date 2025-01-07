@@ -6,17 +6,21 @@ const scores = [36, 62, 72, 55, 86, 95, 92, 48, 81];
 
 
 function calculate(firstNum, operator, secondNum) {
-    if (operator === '+') {
-        return (firstNum + secondNum);
-    }
-    if (operator === '-') {
-        return (firstNum - secondNum);
-    }
-    if (operator === '*') {
-        return (firstNum * secondNum);
-    }
-    if (operator === '/') {
-        return (firstNum / secondNum);
+    switch (operator) {
+        case '+':
+            return firstNum + secondNum;
+            break;
+        case '-':
+            return firstNum - secondNum;
+            break;
+        case '*':
+            return firstNum * secondNum;
+            break;
+        case '/':
+            return firstNum / secondNum;
+            break;
+        default:
+            return "error"
     }
 }
 
